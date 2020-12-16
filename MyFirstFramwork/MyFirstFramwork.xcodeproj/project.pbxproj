@@ -10,6 +10,7 @@
 		0082D1C92589D9A10038E58C /* MyFirstFramwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0082D1BF2589D9A10038E58C /* MyFirstFramwork.framework */; };
 		0082D1CE2589D9A10038E58C /* MyFirstFramworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082D1CD2589D9A10038E58C /* MyFirstFramworkTests.swift */; };
 		0082D1D02589D9A10038E58C /* MyFirstFramwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 0082D1C22589D9A10038E58C /* MyFirstFramwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0082D1DA2589DB190038E58C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082D1D92589DB190038E58C /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		0082D1C82589D9A10038E58C /* MyFirstFramworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstFramworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0082D1CD2589D9A10038E58C /* MyFirstFramworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstFramworkTests.swift; sourceTree = "<group>"; };
 		0082D1CF2589D9A10038E58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0082D1D92589DB190038E58C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				0082D1C22589D9A10038E58C /* MyFirstFramwork.h */,
 				0082D1C32589D9A10038E58C /* Info.plist */,
+				0082D1D92589DB190038E58C /* Service.swift */,
 			);
 			path = MyFirstFramwork;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					0082D1BE2589D9A10038E58C = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					0082D1C72589D9A10038E58C = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0082D1DA2589DB190038E58C /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		0082D1D42589D9A10038E58C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P888Z78U6E;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hellogroup.hellopaisa.MyFirstFramwork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		0082D1D52589D9A10038E58C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = P888Z78U6E;
@@ -388,6 +396,7 @@
 		0082D1D72589D9A10038E58C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P888Z78U6E;
 				INFOPLIST_FILE = MyFirstFramworkTests/Info.plist;
@@ -406,6 +415,7 @@
 		0082D1D82589D9A10038E58C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P888Z78U6E;
 				INFOPLIST_FILE = MyFirstFramworkTests/Info.plist;
