@@ -7,29 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0082D1C92589D9A10038E58C /* MyFirstFramwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0082D1BF2589D9A10038E58C /* MyFirstFramwork.framework */; };
-		0082D1CE2589D9A10038E58C /* MyFirstFramworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082D1CD2589D9A10038E58C /* MyFirstFramworkTests.swift */; };
 		0082D1D02589D9A10038E58C /* MyFirstFramwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 0082D1C22589D9A10038E58C /* MyFirstFramwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0082D1DA2589DB190038E58C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082D1D92589DB190038E58C /* Service.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0082D1CA2589D9A10038E58C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0082D1B62589D9A10038E58C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0082D1BE2589D9A10038E58C;
-			remoteInfo = MyFirstFramwork;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0082D1BF2589D9A10038E58C /* MyFirstFramwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFirstFramwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0082D1C22589D9A10038E58C /* MyFirstFramwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFirstFramwork.h; sourceTree = "<group>"; };
 		0082D1C32589D9A10038E58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0082D1C82589D9A10038E58C /* MyFirstFramworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstFramworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0082D1CD2589D9A10038E58C /* MyFirstFramworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstFramworkTests.swift; sourceTree = "<group>"; };
-		0082D1CF2589D9A10038E58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0082D1D92589DB190038E58C /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0082D1C52589D9A10038E58C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0082D1C92589D9A10038E58C /* MyFirstFramwork.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				0082D1C12589D9A10038E58C /* MyFirstFramwork */,
-				0082D1CC2589D9A10038E58C /* MyFirstFramworkTests */,
 				0082D1C02589D9A10038E58C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				0082D1BF2589D9A10038E58C /* MyFirstFramwork.framework */,
-				0082D1C82589D9A10038E58C /* MyFirstFramworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,15 +53,6 @@
 				0082D1D92589DB190038E58C /* Service.swift */,
 			);
 			path = MyFirstFramwork;
-			sourceTree = "<group>";
-		};
-		0082D1CC2589D9A10038E58C /* MyFirstFramworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				0082D1CD2589D9A10038E58C /* MyFirstFramworkTests.swift */,
-				0082D1CF2589D9A10038E58C /* Info.plist */,
-			);
-			path = MyFirstFramworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,24 +87,6 @@
 			productReference = 0082D1BF2589D9A10038E58C /* MyFirstFramwork.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0082D1C72589D9A10038E58C /* MyFirstFramworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0082D1D62589D9A10038E58C /* Build configuration list for PBXNativeTarget "MyFirstFramworkTests" */;
-			buildPhases = (
-				0082D1C42589D9A10038E58C /* Sources */,
-				0082D1C52589D9A10038E58C /* Frameworks */,
-				0082D1C62589D9A10038E58C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0082D1CB2589D9A10038E58C /* PBXTargetDependency */,
-			);
-			name = MyFirstFramworkTests;
-			productName = MyFirstFramworkTests;
-			productReference = 0082D1C82589D9A10038E58C /* MyFirstFramworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,9 +100,6 @@
 					0082D1BE2589D9A10038E58C = {
 						CreatedOnToolsVersion = 11.4;
 						LastSwiftMigration = 1140;
-					};
-					0082D1C72589D9A10038E58C = {
-						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -172,20 +117,12 @@
 			projectRoot = "";
 			targets = (
 				0082D1BE2589D9A10038E58C /* MyFirstFramwork */,
-				0082D1C72589D9A10038E58C /* MyFirstFramworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0082D1BD2589D9A10038E58C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0082D1C62589D9A10038E58C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,23 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0082D1C42589D9A10038E58C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0082D1CE2589D9A10038E58C /* MyFirstFramworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0082D1CB2589D9A10038E58C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0082D1BE2589D9A10038E58C /* MyFirstFramwork */;
-			targetProxy = 0082D1CA2589D9A10038E58C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0082D1D12589D9A10038E58C /* Debug */ = {
@@ -393,44 +314,6 @@
 			};
 			name = Release;
 		};
-		0082D1D72589D9A10038E58C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P888Z78U6E;
-				INFOPLIST_FILE = MyFirstFramworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hellogroup.hellopaisa.MyFirstFramworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0082D1D82589D9A10038E58C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P888Z78U6E;
-				INFOPLIST_FILE = MyFirstFramworkTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hellogroup.hellopaisa.MyFirstFramworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -448,15 +331,6 @@
 			buildConfigurations = (
 				0082D1D42589D9A10038E58C /* Debug */,
 				0082D1D52589D9A10038E58C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0082D1D62589D9A10038E58C /* Build configuration list for PBXNativeTarget "MyFirstFramworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0082D1D72589D9A10038E58C /* Debug */,
-				0082D1D82589D9A10038E58C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
